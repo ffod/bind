@@ -15,6 +15,8 @@ git clone https://github.com/ffod/bind.git
 
 chown dnsbind:dnsbind bind -R
 
+chmod +x bind/updatedns.sh
+
 /home/dnsbind/bind/updatedns.sh
 
 
