@@ -1,0 +1,52 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     barnitz.ffod.org. dns.ffod.org. (
+                     2015093001         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      ns3.nsentry.de.
+@       IN      A       10.144.0.2
+@       IN      AAAA    fddf:0bf7:80::a38:2
+
+;; Update
+firmware                IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+
+;; NTP Service
+ntp                     IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+
+;; FF Map
+map                     IN      A       10.144.0.3
+                        IN      AAAA    fddf:0bf7:80::a38:3
+
+;; Knoten
+knoten                  IN      A       10.144.0.1
+                        IN      AAAA    fddf:0bf7:80::a38:1
+node    CNAME knoten
+router  CNAME knoten
+
+;; FF ts
+ts                      IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+
+;; Barnitz
+barnitz                 IN      A       37.120.163.174
+
+;; Beste
+beste                   IN      A       78.47.111.238
+
+;; Bille
+bille                   IN      A       78.47.110.234
+
+;; RegisterForumlar
+register                IN      A       62.75.209.14
+
+;; Wildcard
+*                       IN      A       62.75.209.14
+
