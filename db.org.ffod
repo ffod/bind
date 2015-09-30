@@ -3,7 +3,7 @@
 ;
 $TTL    604800
 @       IN      SOA     barnitz.ffod.org. info.stormarn.freifunk.net. (
-                     2015093002         ; Serial
+                     2015093003         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -32,6 +32,7 @@ map                     IN      A       10.144.0.3
 knoten                  IN      A       10.144.0.1
                         IN      AAAA    fddf:0bf7:80::a38:1
 node        CNAME 	knoten
+next        CNAME 	knoten
 router        CNAME 	knoten
 
 ;; FF ts
