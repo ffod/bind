@@ -2,16 +2,19 @@
 ; BIND data file for local loopback interface
 ;
 $TTL    604800
-@       IN      SOA     barnitz.ffod.org. dns.ffod.org. (
+@       IN      SOA     barnitz.ffod.org. info.stormarn.freifunk.net. (
                      2015093001         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
-;
-@       IN      NS      ns3.nsentry.de.
-@       IN      A       10.144.0.2
-@       IN      AAAA    fddf:0bf7:80::a38:2
+
+;; Authorative Nameserver
+@				NS	barnitz.ffod.org
+@				NS	beste.ffod.org
+@				NS	bille.ffod.org
+@				NS	ns3.nsentry.de
+@				NS	ns4.nsentry.de
 
 ;; Update
 firmware                IN      A       10.144.0.2
@@ -28,8 +31,8 @@ map                     IN      A       10.144.0.3
 ;; Knoten
 knoten                  IN      A       10.144.0.1
                         IN      AAAA    fddf:0bf7:80::a38:1
-node    CNAME knoten
-router  CNAME knoten
+node    												CNAME 	knoten
+router  												CNAME 	knoten
 
 ;; FF ts
 ts                      IN      A       10.144.0.2
@@ -48,5 +51,5 @@ bille                   IN      A       78.47.110.234
 register                IN      A       62.75.209.14
 
 ;; Wildcard
-*                       IN      A       62.75.209.14
+*																CNAME		ffod.org.
 
