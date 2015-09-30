@@ -10,11 +10,11 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 
 ;; Authorative Nameserver
-@				NS	barnitz.ffod.org
-@				NS	beste.ffod.org
-@				NS	bille.ffod.org
-@				NS	ns3.nsentry.de
-@				NS	ns4.nsentry.de
+@				NS	barnitz.ffod.org.
+@				NS	beste.ffod.org.
+@				NS	bille.ffod.org.
+@				NS	ns3.nsentry.de.
+@				NS	ns4.nsentry.de.
 
 ;; Update
 firmware                IN      A       10.144.0.2
