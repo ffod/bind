@@ -10,8 +10,10 @@ useradd -m -s /bin/bash dnsbind
 
 
 cd /home/dnsbind
-git clone https://github.com/freifunkhamburg/bind
+git clone https://github.com/ffod/bind.git
+
 chown dnsbind:dnsbind bind -R
+
 /home/dnsbind/bind/updatedns.sh
 
 
