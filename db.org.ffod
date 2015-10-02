@@ -51,4 +51,6 @@ bille                   IN      A       78.47.110.234
 
 ;; RegisterForumlar
 register                IN      A       62.75.209.14
- 
+
+;; Test fuers Script
+test      IN  A 10.144.0.1
