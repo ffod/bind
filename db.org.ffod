@@ -21,6 +21,9 @@ $ORIGIN ffod.org.
 firmware                IN      A       10.144.0.2
                         IN      AAAA    fddf:0bf7:80::a38:2
 
+firmware.lauenburg                IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+
 ;; NTP Service
 ntp                     IN      A       10.144.0.2
                         IN      AAAA    fddf:0bf7:80::a38:2
