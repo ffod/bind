@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # Simple script to update the dns (db.org.ffod) files from git
 
