@@ -34,6 +34,6 @@ $ORIGIN rz.ja.tc.
 test11   IN  A      10.144.1.11
 
 ; Zone SE - Für Kreis Segeberg
-$ORIGIN se.ja.tc.
-test12   IN  A      10.144.1.12
+;$ORIGIN se.ja.tc.
+;test12   IN  A      10.144.1.12
 
