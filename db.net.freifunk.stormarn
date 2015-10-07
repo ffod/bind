@@ -1,0 +1,13 @@
+$TTL	43200 ; 24 hours could have been written as 24h or 1d
+$ORIGIN stormarn.freifunk.net.
+@  1D  IN  SOA ns3.nsentry.de. dnsmaster.stormarn.freifunk.net. (
+			      2015100701 ; serial
+			      21600 ; refresh
+			      10800 ; retry
+			      604800 ; expire
+			      3600 ; minimum
+			     )
+       IN  NS     ns3.nsentry.de. ; external to domain
+       IN  NS     ns4.nsentry.de. ; external to domain	   
+ts    IN  A      10.144.0.2  ;TeamSpeak Server intern
+
