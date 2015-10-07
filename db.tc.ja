@@ -1,7 +1,7 @@
 $TTL	43200 ; 24 hours could have been written as 24h or 1d
 $ORIGIN ja.tc.
 @  1D  IN  SOA ns2.ja.tc. hostmaster.ja.tc. (
-			      2015100701 ; serial
+			      2015100703 ; serial
 			      21600 ; refresh
 			      10800 ; retry
 			      604800 ; expire
@@ -33,7 +33,7 @@ test10   IN  A      10.144.1.10
 $ORIGIN rz.ja.tc.
 test11   IN  A      10.144.1.11
 
-; Zone SE - Für Kreis Segeberg
+; Zone SE - Für Kreis Segeberg - Als Vorbereitung, falls wir dort gemeinsam aktiv werden
 ;$ORIGIN se.ja.tc.
 ;test12   IN  A      10.144.1.12
 
