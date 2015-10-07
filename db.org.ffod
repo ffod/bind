@@ -4,7 +4,7 @@
 $TTL    604800
 $ORIGIN ffod.org.
 @       IN      SOA     barnitz.ffod.org. info.stormarn.freifunk.net. (
-                     2015100205         ; Serial
+                     2015100701         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -54,6 +54,4 @@ bille                   IN      A       78.47.110.234
 
 ;; RegisterForumlar
 register                IN      A       62.75.209.14
-
-;; Test fuers Script
-test      IN  A 10.144.0.1
+ 
