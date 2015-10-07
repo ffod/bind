@@ -15,10 +15,12 @@ git clone https://github.com/ffod/bind.git
 
 chown dnsbind:dnsbind bind -R
 
-chmod +x bind/updatedns.sh
+chmod +x bind/update*
 
-/home/dnsbind/bind/updatedns.sh
+/home/dnsbind/bind/updateffod.sh
+/home/dnsbind/bind/updateja.sh
 
 
-*/5 * * * * /home/dnsbind/bind/updatedns.sh > /dev/null 2>&1
+*/5 * * * * root /home/dnsbind/bind/updateffod.sh > /dev/null 2>&1
+*/5 * * * * root /home/dnsbind/bind/updateja.sh > /dev/null 2>&1
 
