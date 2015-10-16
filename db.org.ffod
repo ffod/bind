@@ -53,5 +53,5 @@ bille                   IN      A       78.47.110.234
 register                IN      A       62.75.209.14
 
 ;; Dienste
-@ORIGIN service.ffod.org.
-voip                 IN      A      10.144.1.2
+$ORIGIN service.ffod.org.
+voip                IN      A       10.144.1.2
