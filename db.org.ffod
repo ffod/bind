@@ -11,9 +11,6 @@ $ORIGIN ffod.org.
                          604800 )       ; Negative Cache TTL
 
 ;; Authorative Nameserver
-@				NS	barnitz.ffod.org.
-@				NS	beste.ffod.org.
-@				NS	bille.ffod.org.
 @				NS	ns3.nsentry.de.
 @				NS	ns4.nsentry.de.
 
@@ -54,4 +51,7 @@ bille                   IN      A       78.47.110.234
 
 ;; RegisterForumlar
 register                IN      A       62.75.209.14
- 
+
+;; Dienste
+@ORIGIN service.ffod.org.
+voip                 IN      A      10.144.1.2
