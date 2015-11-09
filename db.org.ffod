@@ -49,6 +49,11 @@ beste                   IN      A       78.47.111.238
 ;; Bille
 bille                   IN      A       78.47.110.234
 
+;; Trave
+trave                   IN      A       
+88.198.243.186
+
+
 ;; RegisterForumlar
 register                IN      A       62.75.209.14
 
