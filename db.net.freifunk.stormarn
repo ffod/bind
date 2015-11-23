@@ -7,7 +7,54 @@ $ORIGIN stormarn.freifunk.net.
 			      604800 ; expire
 			      3600 ; minimum
 			     )
-       IN  NS     ns3.nsentry.de. ; external to domain
-       IN  NS     ns4.nsentry.de. ; external to domain	   
+;; Authorative Nameserver
+@				NS	ns3.nsentry.de.
+@				NS	ns4.nsentry.de.
+
+;; Teamspeak
 ts    IN  A      10.144.0.2  ;TeamSpeak Server intern
 
+;; Update
+firmware                IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+
+firmware.lauenburg                IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+
+;; NTP Service
+ntp                     IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+
+;; FF Map
+map                     IN      A       10.144.0.3
+                        IN      AAAA    fddf:0bf7:80::a38:3
+
+;; Knoten
+knoten                  IN      A       10.144.0.1
+                        IN      AAAA    fddf:0bf7:80::a38:1
+node        CNAME 	knoten
+next        CNAME 	knoten
+router        CNAME 	knoten
+
+;; FF ts
+ts                      IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+
+;; Barnitz
+barnitz                 IN      A       37.120.163.174
+
+;; Beste
+beste                   IN      A       78.47.111.238
+
+;; Bille
+bille                   IN      A       78.47.110.234
+
+;; Trave
+trave                   IN      A       88.198.243.186
+
+;; RegisterForumlar
+register                IN      A       62.75.209.14
+
+;; Dienste
+$ORIGIN service.stormarn.freifunk.net.
+voip                IN      A       10.144.1.2
