@@ -4,7 +4,7 @@
 $TTL    604800
 $ORIGIN stormarn.freifunk.net.
 @       IN      SOA     stormarn.freifunk.net. info.stormarn.freifunk.net. (
-                     2015110901         ; Serial
+                     2015121401         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
