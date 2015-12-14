@@ -2,8 +2,8 @@
 ; BIND data file for local loopback interface
 ;
 $TTL    604800
-$ORIGIN ffod.org.
-@       IN      SOA     barnitz.ffod.org. info.stormarn.freifunk.net. (
+$ORIGIN stormarn.freifunk.net.
+@       IN      SOA     stormarn.freifunk.net. info.stormarn.freifunk.net. (
                      2015110901         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
@@ -16,9 +16,6 @@ $ORIGIN ffod.org.
 
 ;; Update
 firmware                IN      A       10.144.0.2
-                        IN      AAAA    fddf:0bf7:80::a38:2
-
-firmware.lauenburg                IN      A       10.144.0.2
                         IN      AAAA    fddf:0bf7:80::a38:2
 
 ;; NTP Service
@@ -52,9 +49,8 @@ bille                   IN      A       78.47.110.234
 ;; Trave
 trave                   IN      A       88.198.243.186
 
-;; RegisterForumlar
-register                IN      A       62.75.209.14
 
 ;; Dienste
-$ORIGIN service.ffod.org.
-voip                IN      A       10.144.1.2
+$ORIGIN service.stormarn.freifunk.net.
+;;voip                IN      A       10.144.1.2
+;;jabber                IN      A       10.144.1.123
