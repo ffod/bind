@@ -1,5 +1,5 @@
 #!/bin/bash
-# Simple script to update the dns (db.org.ffod) files from git
+# Simple script to update the dns (db.net.freifunk.stormarn) files from git
 
 # CONFIGURE THIS TO YOUR GIT DIRECTORY
 GIT_REPO=/home/dnsbind/bind
@@ -11,9 +11,9 @@ cd $GIT_REPO
 
 su -c "git pull -q" $USER
 
-if ! cmp $GIT_REPO/db.org.ffod /etc/bind/db.org.ffod >/dev/null 2>&1 ;
+if ! cmp $GIT_REPO/db.net.freifunk.stormarn /etc/bind/db.net.freifunk.stormarn >/dev/null 2>&1 ;
 then
-    cp $GIT_REPO/db.org.ffod /etc/bind/db.org.ffod
+    cp $GIT_REPO/db.net.freifunk.stormarn /etc/bind/db.net.freifunk.stormarn
 
     /usr/sbin/service bind9 status 2>&1> /dev/null
     if [[ $? -eq 0 ]]
