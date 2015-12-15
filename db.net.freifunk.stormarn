@@ -1,14 +1,14 @@
 ;
 ; BIND data file for local loopback interface
 ;
-$TTL    604800
+$TTL    900
 $ORIGIN stormarn.freifunk.net.
 @       IN      SOA     stormarn.freifunk.net. info.stormarn.freifunk.net. (
-                     2015121401         ; Serial
-                         604800         ; Refresh
-                          86400         ; Retry
-                        2419200         ; Expire
-                         604800 )       ; Negative Cache TTL
+                     2015121501         ; Serial
+                          28800         ; Refresh
+                           7200         ; Retry
+                         604800         ; Expire
+                            900 )       ; Negative Cache TTL
 
 ;; Authorative Nameserver
 @				NS	ns3.nsentry.de.
@@ -53,4 +53,4 @@ trave                   IN      A       88.198.243.186
 ;; Dienste
 $ORIGIN service.stormarn.freifunk.net.
 ;;voip                IN      A       10.144.1.2
-;;jabber                IN      A       10.144.1.123
+jabber                IN      A       10.144.1.3
