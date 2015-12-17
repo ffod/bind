@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN stormarn.freifunk.net.
 @       IN      SOA     stormarn.freifunk.net. info.stormarn.freifunk.net. (
-                     2015121501         ; Serial
+                     2015121701         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -13,6 +13,8 @@ $ORIGIN stormarn.freifunk.net.
 ;; Authorative Nameserver
 @				NS	ns3.nsentry.de.
 @				NS	ns4.nsentry.de.
+
+stormarn.freifunk.net.                IN      A       5.9.111.92
 
 ;; Update
 firmware                IN      A       10.144.0.2
@@ -48,6 +50,9 @@ bille                   IN      A       78.47.110.234
 
 ;; Trave
 trave                   IN      A       88.198.243.186
+
+;; all other
+*                   IN      A       5.9.111.92
 
 
 ;; Dienste
