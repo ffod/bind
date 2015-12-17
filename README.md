@@ -10,7 +10,7 @@ useradd -m -s /bin/bash dnsbind
 
 cd /home/dnsbind
 
-su bind
+su dnsbind
 
 git clone https://github.com/ffod/bind.git
 
