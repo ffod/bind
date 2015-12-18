@@ -39,23 +39,22 @@ router        CNAME 	knoten
 ts                      IN      A       10.144.0.2
                         IN      AAAA    fddf:0bf7:80::a38:2
 
-;; Barnitz
+;; Gateways
 barnitz                 IN      A       37.120.163.174
-
-;; Beste
 beste                   IN      A       78.47.111.238
-
-;; Bille
 bille                   IN      A       78.47.110.234
-
-;; Trave
 trave                   IN      A       88.198.243.186
+
+;; Mail
+mail                      IN      A       5.9.111.92
+                        IN      MX    10 mail.stormarn.freifunk.net.
 
 ;; all other
 *                   IN      A       5.9.111.92
+prosody                   IN      A       10.144.1.3
 
 
 ;; Dienste
 $ORIGIN service.stormarn.freifunk.net.
 ;;voip                IN      A       10.144.1.2
-jabber                IN      A       10.144.1.3
+;;jabber                IN      A       10.144.1.3
