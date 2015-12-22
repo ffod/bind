@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN stormarn.freifunk.net.
 @       IN      SOA     ns3.nsentry.de. info.stormarn.freifunk.net. (
-                     2015122111         ; Serial
+                     2015122202         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -28,7 +28,6 @@ ntp                     IN      A       10.144.0.2
 ;; FF Map
 map                     IN      A       10.144.16.1
                         IN      AAAA    fddf:0bf7:80::a16:1
-newmap                     IN      A       5.9.111.91
 
 ;; Knoten
 knoten                  IN      A       10.144.0.1
@@ -43,7 +42,7 @@ ts                      IN      A       10.144.0.2
 
 ;; Gateways
 barnitz                 IN      A       37.120.163.174
-beste                   IN      A       78.47.111.238
+beste                   IN      A       5.9.111.91
 bille                   IN      A       78.47.110.234
 trave                   IN      A       88.198.243.186
 
