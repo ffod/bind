@@ -4,14 +4,16 @@
 $TTL    900
 $ORIGIN lauenburg.freifunk.net.
 @       IN      SOA     docker.zemvol.de. info.lauenburg.freifunk.net. (
-                     2016012201         ; Serial
+                     2016012301         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
                             900 )       ; Negative Cache TTL
 
 ;; Authorative Nameserver
-				NS	88.198.243.187
+				NS	zemvol.de.
+
+zemvol.de.	IN	A 88.198.243.187
 
 lauenburg.freifunk.net.                IN      A       88.198.243.187
 www                IN      A       88.198.243.187
