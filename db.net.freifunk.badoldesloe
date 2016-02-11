@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN badoldesloe.freifunk.net.
 @       IN      SOA     ns3.nsentry.de. info.badoldesloe.freifunk.net. (
-                     2016011801         ; Serial
+                     2016021101         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -20,6 +20,8 @@ www                IN      A       5.9.111.92
 ;; Update
 firmware                IN      A       10.144.0.2
                         IN      AAAA    fddf:0bf7:80::a38:2
+gluon                   IN      AAAA    fddf:0bf7:80::a38:2
+update                  IN      AAAA    fddf:0bf7:80::a38:2
 
 ;; NTP Service
 ntp                     IN      A       10.144.0.2
@@ -42,10 +44,10 @@ ts                      IN      A       10.144.0.2
                         IN      AAAA    fddf:0bf7:80::a38:2
 
 ;; Gateways
-;;barnitz                 IN      A       37.120.163.174
-beste                   IN      A       5.9.111.91
-;;bille                   IN      A       78.47.110.234
-;;trave                   IN      A       88.198.243.186
+barnitz                 IN      A       10.144.0.2
+beste                   IN      A       10.144.0.3
+bille                   IN      A       10.144.0.4
+trave                   IN      A       10.144.0.12
 
 ;; Mail
 mail                      IN      A       5.9.111.92
