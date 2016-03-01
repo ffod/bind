@@ -33,8 +33,7 @@ map                     IN      A       10.144.0.2
 kirche                  CNAME map
 
 ;; Knoten
-knoten                  IN      A       10.144.0.1
-                        IN      AAAA    fddf:0bf7:80::a38:1
+knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node        CNAME 	knoten
 next        CNAME 	knoten
 router        CNAME 	knoten
