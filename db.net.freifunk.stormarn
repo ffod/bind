@@ -21,8 +21,7 @@ www                IN      A       5.9.111.92
 firmware                IN      A       10.144.0.2
                         IN      AAAA    fddf:0bf7:80::a38:2
 futro IN AAAA fddf:bf7:80::a38:2
-gluon                IN      AAAA    fddf:0bf7:80::a38:2
-update                IN      AAAA    fddf:0bf7:80::a38:2 ;;ERST WENN UPDATE AUF 11s ERFOLGREICH
+update                IN      AAAA    fddf:0bf7:80::a38:2
 
 ;; NTP Service
 ntp                     IN      A       10.144.0.2
