@@ -21,3 +21,36 @@ then
         /usr/sbin/service bind9 restart
     fi
 fi
+
+if ! cmp $GIT_REPO/db.net.freifunk.badoldesloe /etc/bind/db.net.freifunk.badoldesloe >/dev/null 2>&1 ;
+then
+    cp $GIT_REPO/db.net.freifunk.badoldesloe /etc/bind/db.net.freifunk.badoldesloe
+
+    /usr/sbin/service bind9 status 2>&1> /dev/null
+    if [[ $? -eq 0 ]]
+    then
+        /usr/sbin/service bind9 restart
+    fi
+fi
+
+if ! cmp $GIT_REPO/db.de.freifunk-stormarn /etc/bind/db.de.freifunk-stormarn >/dev/null 2>&1 ;
+then
+    cp $GIT_REPO/db.de.freifunk-stormarn /etc/bind/db.de.freifunk-stormarn
+
+    /usr/sbin/service bind9 status 2>&1> /dev/null
+    if [[ $? -eq 0 ]]
+    then
+        /usr/sbin/service bind9 restart
+    fi
+fi
+
+if ! cmp $GIT_REPO/db.net.freifunk.oldesloe /etc/bind/db.net.freifunk.oldesloe >/dev/null 2>&1 ;
+then
+    cp $GIT_REPO/db.net.freifunk.oldesloe /etc/bind/db.net.freifunk.oldesloe
+
+    /usr/sbin/service bind9 status 2>&1> /dev/null
+    if [[ $? -eq 0 ]]
+    then
+        /usr/sbin/service bind9 restart
+    fi
+fi
