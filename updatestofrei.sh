@@ -54,3 +54,14 @@ then
         /usr/sbin/service bind9 restart
     fi
 fi
+
+if ! cmp $GIT_REPO/db.net.freifunk.reinbek /etc/bind/db.net.freifunk.reinbek >/dev/null 2>&1 ;
+then
+    cp $GIT_REPO/db.net.freifunk.reinbek /etc/bind/db.net.freifunk.reinbek
+
+    /usr/sbin/service bind9 status 2>&1> /dev/null
+    if [[ $? -eq 0 ]]
+    then
+        /usr/sbin/service bind9 restart
+    fi
+fi
