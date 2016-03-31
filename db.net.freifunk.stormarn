@@ -24,7 +24,7 @@ futro IN AAAA fddf:bf7:80::a38:2
 update                IN      AAAA    fddf:0bf7:80::a38:2
 
 ;; NTP Service
-ntp                     IN      A       129.6.15.28
+ntp                     IN AAAA       fddf:bf7:80:0:c66e:1fff:fe41:7354
 
 ;; FF Map
 map                     IN      A       10.144.0.2
