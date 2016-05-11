@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN stormarn.freifunk.net.
 @       IN      SOA     ns3.nsentry.de. info.stormarn.freifunk.net. (
-                     2016033101         ; Serial
+                     2016051101         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -18,18 +18,18 @@ stormarn.freifunk.net.                IN      A       5.9.111.92
 www                IN      A       5.9.111.92
 
 ;; Update
-firmware                IN      A       10.144.0.2
-                        IN      AAAA    fddf:0bf7:80::a38:2
+firmware                IN      A       10.144.0.3
+                        IN      AAAA    fddf:0bf7:80::a38:3
 futro IN AAAA fddf:bf7:80::a38:2
-update                IN      AAAA    fddf:0bf7:80::a38:2
+update                IN      AAAA    fddf:0bf7:80::a38:3
 
 ;; NTP Service
 ntp                     IN AAAA       fddf:bf7:80:0:c66e:1fff:fe41:7354
 
 ;; FF Map
-map                     IN      A       10.144.0.2
-                        IN      AAAA    fddf:0bf7:80::a38:2
-maprz                       IN A 10.144.0.2
+map                     IN      A       10.144.0.3
+                        IN      AAAA    fddf:0bf7:80::a38:3
+maprz                       IN A 10.144.0.3
 
 ;; Knoten
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
@@ -38,11 +38,11 @@ next        CNAME 	knoten
 router        CNAME 	knoten
 
 ;; FF ts
-ts                      IN      A       10.144.0.2
-                        IN      AAAA    fddf:0bf7:80::a38:2
+;;ts                      IN      A       10.144.0.2
+;;                        IN      AAAA    fddf:0bf7:80::a38:2
 
 ;; Gateways
-barnitz                 IN      A       37.120.163.174
+;; barnitz                 IN      A       37.120.163.174
 beste                   IN      A       5.9.111.91
 bille                   IN      A       88.198.243.190
 trave                   IN      A       88.198.243.186
