@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-stormarn.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-stormarn.de. (
-                     2016051111         ; Serial
+                     2016051401         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -48,6 +48,7 @@ router        CNAME 	knoten
 beste                   IN      A       5.9.111.91
 bille                   IN      A       88.198.243.190
 trave                   IN      A       88.198.243.186
+viehbach                   IN      A       144.76.16.234
 
 ;; Mail
 mail                      IN      A       5.9.111.92
