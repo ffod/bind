@@ -18,10 +18,10 @@ stormarn.freifunk.net.                IN      A       5.9.111.92
 www                IN      A       5.9.111.92
 
 ;; Update
-firmware                IN      A       10.144.0.3
-                        IN      AAAA    fddf:0bf7:80::a38:3
-futro IN AAAA fddf:bf7:80::a38:2
-update                IN      AAAA    fddf:0bf7:80::a38:3
+firmware                IN      A       10.144.0.8
+                        IN      AAAA    fddf:0bf7:80::a38:8
+futro IN AAAA fddf:bf7:80::a38:8
+update                IN      AAAA    fddf:0bf7:80::a38:8
 
 ;; NTP Service
 ntp                     IN AAAA       fddf:bf7:80:0:c66e:1fff:fe41:7354
