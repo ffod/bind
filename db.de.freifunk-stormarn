@@ -22,7 +22,6 @@ support                IN      A       5.9.111.92
 ;; Update
 firmware                IN      A       10.144.0.8
                         IN      AAAA    fddf:0bf7:80::a38:8
-futro IN AAAA fddf:bf7:80::a38:2
 update                IN      AAAA    fddf:0bf7:80::a38:8
 
 ;; NTP Service
