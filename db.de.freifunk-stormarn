@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-stormarn.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-stormarn.de. (
-                     2016060101         ; Serial
+                     2016072301         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -16,7 +16,7 @@ $ORIGIN freifunk-stormarn.de.
 
 freifunk-stormarn.de.                IN      A       5.9.111.92
 www                IN      A       5.9.111.92
-tickets                IN      A       5.9.111.92
+tickets                IN      A       136.243.202.90
 support                IN      A       5.9.111.92
 
 ;; Update
