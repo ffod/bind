@@ -44,6 +44,8 @@ router        CNAME 	knoten
 ;; FF ts
 ts                      IN      A       136.243.202.94
 ;;                        IN      AAAA    fddf:0bf7:80::a38:2
+admin.ts                      IN      A       136.243.202.94
+
 
 ;; Gateways
 bille                   IN      A       88.198.243.190
