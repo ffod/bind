@@ -21,8 +21,8 @@ support                IN      A       136.243.202.90
 
 ;; Update
 ;;firmware                IN      A       10.144.0.8
-firmware               IN      AAAA    fddf:bf7:80:0:3cbb:e1ff:fe88:a0c
-update                IN      AAAA    fddf:bf7:80:0:3cbb:e1ff:fe88:a0c
+firmware               IN      AAAA    fddf:bf7:80:0:e037:feff:fe70:8117
+update                IN      AAAA    fddf:bf7:80:0:e037:feff:fe70:8117
 gluon                CNAME firmware
 gluonrz CNAME firmware
 
