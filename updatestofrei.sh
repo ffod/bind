@@ -22,6 +22,7 @@ then
     fi
 fi
 
+
 if ! cmp $GIT_REPO/db.net.freifunk.badoldesloe /etc/bind/db.net.freifunk.badoldesloe >/dev/null 2>&1 ;
 then
     cp $GIT_REPO/db.net.freifunk.badoldesloe /etc/bind/db.net.freifunk.badoldesloe
