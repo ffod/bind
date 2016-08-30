@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-stormarn.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-stormarn.de. (
-                     2016083002         ; Serial
+                     2016083003         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -27,7 +27,7 @@ gluon                CNAME firmware
 gluonrz CNAME firmware
 
 ;; NTP Service
-ntp                     IN      AAAA    fddf:bf7:80:0:8e89:a5ff:fe1f:5513
+ntp                     IN      AAAA    fddf:bf7:80::dead:112
 
 ;; FF Map
 map                     IN      A       10.144.0.13
