@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-lauenburg.de.
 @       IN      SOA     docker.zemvol.de. info.freifunk-lauenburg.de. (
-                     2016071201         ; Serial
+                     2016083001         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -19,8 +19,8 @@ freifunk-lauenburg.de.                IN      A       88.198.243.187
 www                IN      A       88.198.243.187
 
 ;; Update
-firmware                IN      A       10.144.0.8
-                        IN      AAAA    fddf:0bf7:80::a38:8
+firmware                IN      A       10.144.0.112
+                        IN      AAAA    fddf:bf7:80::dead:112
 
 ;; NTP Service
 ;;ntp                     IN      A       10.144.0.2
