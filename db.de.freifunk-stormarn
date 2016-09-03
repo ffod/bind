@@ -24,8 +24,9 @@ firmware                IN      A       10.144.0.112
                IN      AAAA    fddf:bf7:80::dead:112
 update                CNAME      firmware
 gluon                CNAME firmware
-gluonrz CNAME firmware
-
+gluonrz                IN      A       10.144.0.112
+               IN      AAAA    fddf:bf7:80::dead:112
+               
 ;; NTP Service
 ntp                     IN      AAAA    fddf:bf7:80::dead:112
 
