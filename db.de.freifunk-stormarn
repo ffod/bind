@@ -34,7 +34,9 @@ ntp                     IN      AAAA    fddf:bf7:80::dead:112
 map                     IN      A       10.144.0.13
                         IN      AAAA    fddf:0bf7:80::a38:13
 maprz                       IN A 10.144.0.13
-
+map2                     IN      A       10.144.0.13
+                        IN      AAAA    fddf:0bf7:80::a38:13
+			
 ;; Knoten
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node        CNAME 	knoten
