@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-stormarn.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-stormarn.de. (
-                     2017022301         ; Serial
+                     2017030701         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -14,10 +14,10 @@ $ORIGIN freifunk-stormarn.de.
 				NS	ns3.nsentry.de.
 				NS	ns4.nsentry.de.
 
-freifunk-stormarn.de.                IN      A       136.243.202.90
-www                IN      A       136.243.202.90
-tickets                IN      A       136.243.202.90
-support                IN      A       136.243.202.90
+freifunk-stormarn.de.                IN      A       5.9.168.180
+www                IN      A       5.9.168.180
+tickets                IN      A       5.9.168.180
+support                IN      A       5.9.168.180
 
 ;; Update
 firmware                IN      A       10.144.0.112
@@ -59,9 +59,8 @@ trave                   IN      A       88.198.243.186
 viehbach                   IN      A       5.9.168.176
 
 ;; Mail
-mail                      IN      A       136.243.202.90
-                        IN      MX    10 mail.freifunk-stormarn.de.
-
+mail                      IN      A      5.9.168.180
+                        IN      MX    10 web.kst87.de.
 ;; all other
 prosody                   IN      A       10.144.1.3
 refugeereinbek            IN      A       10.144.1.3
