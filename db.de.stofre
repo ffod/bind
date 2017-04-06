@@ -1,0 +1,63 @@
+$TTL	86400 ; 24 hours could have been written as 24h or 1d
+; $TTL used for all RRs without explicit TTL value
+$ORIGIN stofre.de.
+@  1D  IN  SOA ns1.stofre.de. hostmaster.stofre.de. (
+			      2002022401 ; serial
+			      3H ; refresh
+			      15 ; retry
+			      1w ; expire
+			      3h ; nxdomain ttl
+			     )
+       IN  NS     ns3.nsentry.de. ; in the domain
+       IN  NS     ns4.nsentry.com. ; external to domain
+       IN  MX  10 tux.tuks.in. ; external mail provider
+	   IN	A     5.9.168.183
+
+	   
+; server host definitions
+www    IN  A      5.9.168.183
+;;firmware   IN  A      10.144.112.1
+firmware   IN  CNAME      firmware.stormarn.freifunk.net.
+firmware   IN  AAAA      fddf:bf7:80::112:1
+node   IN  AAAA      fddf:bf7:80::a38:1
+
+; #### GATEWAYS ####
+;;barnitz   IN  A      10.144.16.1
+barnitz   IN  CNAME      barnitz.stormarn.freifunk.net.
+;barnitz   IN  AAAA      fddf:bf7:80::16:1
+;;beste   IN  A      10.144.32.1
+beste   IN  CNAME      beste.stormarn.freifunk.net.
+;beste   IN  AAAA      fddf:bf7:80::32:1
+;;bille   IN  A      10.144.48.1
+bille   IN  CNAME      bille.stormarn.freifunk.net.
+;bille   IN  AAAA      fddf:bf7:80::48:1
+;;brunsbach   IN  A      10.144.64.1
+brunsbach   IN  CNAME      brunsbach.stormarn.freifunk.net.
+;brunsbach   IN  AAAA      fddf:bf7:80::64:1
+;;heilsau   IN  A      10.144.80.1
+heilsau   IN  CNAME      heilsau.stormarn.freifunk.net.
+;heilsau   IN  AAAA      fddf:bf7:80::80:1
+;;hopfenbach   IN  A      10.144.96.1
+hopfenbach   IN  CNAME      hopfenbach.stormarn.freifunk.net.
+;hopfenbach   IN  AAAA      fddf:bf7:80::96:1
+;;krummbach   IN  A      10.144.112.1
+krummbach   IN  CNAME      krummbach.stormarn.freifunk.net.
+;krummbach   IN  AAAA      fddf:bf7:80::112:1
+;;piepenbek   IN  A      10.144.128.1
+piepenbek   IN  CNAME      piepenbek.stormarn.freifunk.net.
+;piepenbek   IN  AAAA      fddf:bf7:80::128:1
+;;strusbek   IN  A      10.144.144.1
+strusbek   IN  CNAME      strusbek.stormarn.freifunk.net.
+;strusbek   IN  AAAA      fddf:bf7:80::144:1
+;;syslbek   IN  A      10.144.160.1
+syslbek   IN  CNAME      syslbek.stormarn.freifunk.net.
+;syslbek   IN  AAAA      fddf:bf7:80::160:1
+;;trave   IN  A      10.144.176.1
+trave   IN  CNAME      trave.stormarn.freifunk.net.
+;trave   IN  AAAA      fddf:bf7:80::176:1
+;;viehbach   IN  A      10.144.192.1
+viehbach   IN  CNAME      viehbach.stormarn.freifunk.net.
+;viehbach   IN  AAAA      fddf:bf7:80::192:1
+
+; #### Benutzerbereich #### Nur Freifunk Intern ####
+tuks   IN  AAAA      fddf:bf7:80:110:112:c0fe
