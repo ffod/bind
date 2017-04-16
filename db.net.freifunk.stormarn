@@ -43,7 +43,7 @@ router        CNAME 	knoten
 bille                   IN      A       88.198.243.190
 ;;krummbach                   IN      A       136.243.202.89
 trave                   IN      A       88.198.243.186
-viehbach                   IN      A       5.9.168.177
+viehbach                   IN      A       5.9.168.176
 
 ;; Mail
 ;;mail                      IN      A       136.243.202.90
