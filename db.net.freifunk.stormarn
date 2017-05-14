@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN stormarn.freifunk.net.
 @       IN      SOA     ns3.nsentry.de. info.stormarn.freifunk.net. (
-                     2017041601         ; Serial
+                     2017051401         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -43,7 +43,7 @@ router        CNAME 	knoten
 bille                   IN      A       88.198.243.190
 ;;krummbach                   IN      A       136.243.202.89
 trave                   IN      A       88.198.243.186
-viehbach                   IN      A       5.9.168.176
+viehbach                   IN      A       176.9.181.152
 
 ;; Mail
 ;;mail                      IN      A       136.243.202.90
