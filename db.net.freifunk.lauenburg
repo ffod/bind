@@ -3,7 +3,7 @@
 ;
 $TTL    900
 $ORIGIN lauenburg.freifunk.net.
-@       IN      SOA     docker.zemvol.de. info.lauenburg.freifunk.net. (
+@       IN      SOA     lauenburg.freifunk.net. info.lauenburg.freifunk.net. (
                      2016083001         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
@@ -15,8 +15,8 @@ $ORIGIN lauenburg.freifunk.net.
 
 ;;zemvol.de.	IN	A 88.198.243.187
 
-lauenburg.freifunk.net.                IN      A       88.198.243.187
-www                IN      A       88.198.243.187
+lauenburg.freifunk.net.                IN      A       176.9.83.62
+www                IN      A       176.9.83.62
 
 ;; Update
 firmware                IN      A       10.144.0.112
@@ -27,8 +27,8 @@ ntp                     IN      A       10.144.0.3
                         IN      AAAA    fddf:0bf7:80::a38:3
 
 ;; FF Map
-map                     IN      A       10.144.0.13
-                        IN      AAAA    fddf:0bf7:80::a38:13
+map                     IN      A       10.144.128.1
+                        IN      AAAA    fddf:0bf7:80::128:1
 
 ;; Knoten
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
@@ -47,8 +47,9 @@ mail                      IN      A       88.198.243.188
 ;; Gateways
 ;;barnitz                 IN      A       37.120.163.174
 ;;beste                   IN      A       5.9.111.91
-;;bille                   IN      A       88.198.243.190
-;;trave                   IN      A       88.198.243.186
+bille                   IN      A       88.198.243.190
+trave                   IN      A       88.198.243.186
+hopfenbach		IN	A	176.9.83.62
 
 ;; all other
 ;;beispiel                   IN      A       10.144.1.3
