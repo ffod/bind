@@ -3,53 +3,49 @@
 ;
 $TTL    900
 $ORIGIN freifunk-lauenburg.de.
-@       IN      SOA     docker.zemvol.de. info.freifunk-lauenburg.de. (
-                     2016083001         ; Serial
+@       IN      SOA     ns0.wollgast-it.de. info.freifunk-lauenburg.de. (
+                     2018021000         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
                             900 )       ; Negative Cache TTL
 
+;;ACHTUNG, Dies ist nur ein Hotpatch!!!	//swo 10.2.2018
+
 ;; Authorative Nameserver
-				NS	zemvol.de.
-
-;;zemvol.de.	IN	A 88.198.243.187
-
-freifunk-lauenburg.de.                IN      A       88.198.243.187
-www                IN      A       88.198.243.187
+				NS	ns0.wollgast-it.de.
+				NS	ns1.wollgast-it.de.
+				
+@			IN	A	176.9.83.62
+www			IN	A	176.9.83.62
 
 ;; Update
-firmware                IN      A       10.144.0.112
-                        IN      AAAA    fddf:bf7:80::dead:112
+firmware		IN	A	10.144.128.1
+			IN	AAAA	fddf:0bf7:80::128:1
 
 ;; NTP Service
-;;ntp                     IN      A       10.144.0.2
-;;                        IN      AAAA    fddf:0bf7:80::a38:2
+;;ntp			IN	A	10.144.0.2
+;;			IN	AAAA	fddf:0bf7:80::a38:2
 
 ;; FF Map
-map                     IN      A       10.144.0.13
-                        IN      AAAA    fddf:0bf7:80::a38:13
+map			IN	A	10.144.128.1
+			IN	AAAA	fddf:0bf7:80::128:1
 
 ;; Knoten
-knoten                  IN      AAAA    fddf:0bf7:80::a38:1
-node        CNAME 	knoten
-next        CNAME 	knoten
-router        CNAME 	knoten
-
-;; FF ts
-;;ts                      IN      A       10.144.0.2
-;;                        IN      AAAA    fddf:0bf7:80::a38:2
+knoten			IN	AAAA	fddf:0bf7:80::a38:1
+node			CNAME 	knoten
+next			CNAME	knoten
+router			CNAME	knoten
 
 ;;Mail
-mail                      IN      A       88.198.243.188
-                          IN      MX    10 mail.freifunk-lauenburg.de.
+;;mail			IN      A       88.198.243.188
+;;			IN      MX    10 mail.freifunk-lauenburg.de.
 
 ;; Gateways
-;;barnitz                 IN      A       37.120.163.174
-;;beste                   IN      A       5.9.111.91
-;;bille                   IN      A       88.198.243.190
-;;trave                   IN      A       88.198.243.186
-hopfenbach                   IN      A       176.9.83.62
+trave			IN	A	88.198.243.186
+hopfenbach		IN	A	176.9.83.62
+krummbach		IN	A	176.9.202.72
+hopfenbach		IN      A       176.9.83.62
 
 
 ;; all other
