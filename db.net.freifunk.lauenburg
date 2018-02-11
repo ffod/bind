@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN lauenburg.freifunk.net.
 @       IN      SOA     lauenburg.freifunk.net. info.lauenburg.freifunk.net. (
-                     2017120400         ; Serial
+                     2018021000         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -12,48 +12,47 @@ $ORIGIN lauenburg.freifunk.net.
 
 ;; Authorative Nameserver
 
-				NS	ns0.wollgast-it.de.
-				NS	ns1.wollgast-it.de
+				NS	ns1.wollgast-it.de.
+				NS	ns0.wollgast-it.de
 
-ns0.wollgast-it.de.	IN	A	176.9.65.215
-ns1.wollgast-it.de.	IN	A	176.9.83.62
+ns1.wollgast-it.de.	IN	A	176.9.65.215
+ns0.wollgast-it.de.	IN	A	176.9.83.62
 
-lauenburg.freifunk.net.	IN	A	176.9.83.62
+@			IN	A	176.9.83.62
+@			IN	AAAA	fddf:bf7:80::128:1
+
 www			IN	A	176.9.83.62
+www			IN	AAAA	fddf:bf7:80::128:1
 
 ;; Update
-firmware                IN      A       10.144.0.112
-                        IN      AAAA    fddf:bf7:80::dead:112
+firmware		IN	A	10.144.128.1
+firmware		IN	AAAA	fddf:bf7:80::128:1
 
 ;; NTP Service
-ntp                     IN      A       10.144.0.3
-                        IN      AAAA    fddf:0bf7:80::a38:3
+ntp			IN	A	10.144.128.1
+			IN	AAAA	fddf:bf7:80::128:1
 
 ;; FF Map
 map			IN	A	10.144.128.1
-			IN	AAAA	fddf:0bf7:80::128:1
+map			IN	AAAA	fddf:bf7:80::128:1
 
 ;; Knoten
-knoten                  IN      AAAA    fddf:0bf7:80::a38:1
-node        CNAME 	knoten
-next        CNAME 	knoten
-router        CNAME 	knoten
+knoten                  IN      AAAA    fddf:bf7:80::128:1
+node			CNAME		knoten
+next			CNAME		knoten
+router			CNAME		knoten
 
-;; FF ts
-;;ts                      IN      A       10.144.0.2
-;;                        IN      AAAA    fddf:0bf7:80::a38:2
-
-;;Mail
+;; Mail
 mail			IN	A	176.9.83.61
-			IN	MX	10 mail.lauenburg.freifunk.net.
+@			IN	MX	10 mail.lauenburg.freifunk.net.
 
 ;; Gateways
 ;;barnitz		IN	A	37.120.163.174
 ;;beste			IN	A	5.9.111.91
-bille                   IN      A	88.198.243.190
-trave                   IN      A	88.198.243.186
+bille			IN	A	88.198.243.190
+trave			IN	A	88.198.243.186
 hopfenbach		IN	A	176.9.83.62
-viehbach		IN	A       176.9.202.73
+viehbach		IN	A	176.9.202.73
 
 
 ;; all other
