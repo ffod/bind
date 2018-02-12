@@ -13,7 +13,7 @@ $ORIGIN lauenburg.freifunk.net.
 ;; Authorative Nameserver
 
 				NS	ns1.wollgast-it.de.
-				NS	ns0.wollgast-it.de
+				NS	ns0.wollgast-it.de.
 
 ns1.wollgast-it.de.	IN	A	176.9.65.215
 ns0.wollgast-it.de.	IN	A	176.9.83.62
